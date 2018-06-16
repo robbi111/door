@@ -1,0 +1,225 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:door
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Automatic Chicken Door"
+Date "2018-06-16"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328P-PU U?
+U 1 1 5B2571D0
+P 5600 3750
+F 0 "U?" H 4850 5000 50  0000 L BNN
+F 1 "ATMEGA328P-PU" H 6000 2350 50  0000 L BNN
+F 2 "DIL28" H 5600 3750 50  0001 C CIN
+F 3 "" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805_TO220 U?
+U 1 1 5B2574AE
+P 2100 1450
+F 0 "U?" H 1950 1575 50  0000 C CNN
+F 1 "LM7805_TO220" H 2100 1575 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 2100 1675 50  0001 C CIN
+F 3 "" H 2100 1400 50  0001 C CNN
+	1    2100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor_DC M?
+U 1 1 5B257555
+P 7800 1350
+F 0 "M?" H 7900 1450 50  0000 L CNN
+F 1 "Motor_DC" H 7900 1150 50  0000 L TNN
+F 2 "" H 7800 1260 50  0001 C CNN
+F 3 "" H 7800 1260 50  0001 C CNN
+	1    7800 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Reed SW?
+U 1 1 5B257647
+P 8050 2350
+F 0 "SW?" H 8050 2450 50  0000 C CNN
+F 1 "SW_Reed" H 8050 2250 50  0000 C CNN
+F 2 "" H 8050 2350 50  0001 C CNN
+F 3 "" H 8050 2350 50  0001 C CNN
+	1    8050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Reed SW?
+U 1 1 5B2576F2
+P 8050 2900
+F 0 "SW?" H 8050 3000 50  0000 C CNN
+F 1 "SW_Reed" H 8050 2800 50  0000 C CNN
+F 2 "" H 8050 2900 50  0001 C CNN
+F 3 "" H 8050 2900 50  0001 C CNN
+	1    8050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y?
+U 1 1 5B25775D
+P 8100 3800
+F 0 "Y?" H 8100 3950 50  0000 C CNN
+F 1 "Crystal" H 8100 3650 50  0000 C CNN
+F 2 "" H 8100 3800 50  0001 C CNN
+F 3 "" H 8100 3800 50  0001 C CNN
+	1    8100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Photo D?
+U 1 1 5B2577BA
+P 8900 1950
+F 0 "D?" H 8920 2020 50  0000 L CNN
+F 1 "D_Photo" H 8860 1840 50  0000 C CNN
+F 2 "" H 8850 1950 50  0001 C CNN
+F 3 "" H 8850 1950 50  0001 C CNN
+	1    8900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW?
+U 1 1 5B257873
+P 9350 2750
+F 0 "SW?" H 9400 2850 50  0000 L CNN
+F 1 "SW_Push" H 9350 2690 50  0000 C CNN
+F 2 "" H 9350 2950 50  0001 C CNN
+F 3 "" H 9350 2950 50  0001 C CNN
+	1    9350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW?
+U 1 1 5B257956
+P 9400 3150
+F 0 "SW?" H 9450 3250 50  0000 L CNN
+F 1 "SW_Push" H 9400 3090 50  0000 C CNN
+F 2 "" H 9400 3350 50  0001 C CNN
+F 3 "" H 9400 3350 50  0001 C CNN
+	1    9400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW?
+U 1 1 5B2579B3
+P 9400 3700
+F 0 "SW?" H 9450 3800 50  0000 L CNN
+F 1 "SW_Push" H 9400 3640 50  0000 C CNN
+F 2 "" H 9400 3900 50  0001 C CNN
+F 3 "" H 9400 3900 50  0001 C CNN
+	1    9400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW?
+U 1 1 5B2579E0
+P 9400 4150
+F 0 "SW?" H 9450 4250 50  0000 L CNN
+F 1 "SW_Push" H 9400 4090 50  0000 C CNN
+F 2 "" H 9400 4350 50  0001 C CNN
+F 3 "" H 9400 4350 50  0001 C CNN
+	1    9400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L RC1602A U?
+U 1 1 5B257B18
+P 9200 5200
+F 0 "U?" H 8950 5850 50  0000 C CNN
+F 1 "RC1602A" H 9310 5850 50  0000 L CNN
+F 2 "Displays:RC1602A" H 9300 4400 50  0001 C CNN
+F 3 "" H 9300 5100 50  0001 C CNN
+	1    9200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B257BD3
+P 3800 3400
+F 0 "C?" H 3825 3500 50  0000 L CNN
+F 1 "C" H 3825 3300 50  0000 L CNN
+F 2 "" H 3838 3250 50  0001 C CNN
+F 3 "" H 3800 3400 50  0001 C CNN
+	1    3800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B257CAA
+P 3800 3850
+F 0 "C?" H 3825 3950 50  0000 L CNN
+F 1 "C" H 3825 3750 50  0000 L CNN
+F 2 "" H 3838 3700 50  0001 C CNN
+F 3 "" H 3800 3850 50  0001 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B257DA7
+P 3800 4300
+F 0 "C?" H 3825 4400 50  0000 L CNN
+F 1 "C" H 3825 4200 50  0000 L CNN
+F 2 "" H 3838 4150 50  0001 C CNN
+F 3 "" H 3800 4300 50  0001 C CNN
+	1    3800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT?
+U 1 1 5B257DF2
+P 1500 3100
+F 0 "BT?" H 1600 3200 50  0000 L CNN
+F 1 "Battery_Cell" H 1600 3100 50  0000 L CNN
+F 2 "" V 1500 3160 50  0001 C CNN
+F 3 "" V 1500 3160 50  0001 C CNN
+	1    1500 3100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
