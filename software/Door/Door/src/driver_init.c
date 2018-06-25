@@ -122,11 +122,6 @@ void TIMER_2_initialization(void)
 	TIMER_2_init();
 }
 
-void TIMER_0_initialization(void)
-{
-
-	TIMER_0_init();
-}
 
 /**
  * \brief System initialization
@@ -261,14 +256,15 @@ void system_init()
 	    false);
 
 	sysctrl_init();
+	
+	WDT_init();
 
 	EXTERNAL_IRQ_0_initialization();
 
-	ADC_0_initialization();
+	//ADC_0_initialization();
 
-	AC_0_initialization();
+	//AC_0_initialization();
 
 	TIMER_2_initialization();
 
-	TIMER_0_initialization();
 }

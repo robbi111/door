@@ -50,7 +50,7 @@
 
 #include <tc8.h>
 
-#include <tc16.h>
+#include <wdt.h>
 
 #ifdef __cplusplus
 extern "C" {
