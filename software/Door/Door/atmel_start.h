@@ -7,6 +7,7 @@ extern "C" {
 
 #include "include/driver_init.h"
 #include "include/atmel_start_pins.h"
+#include <util/delay.h>
 
 /**
  * Initializes MCU, drivers and middleware in the project

@@ -82,7 +82,7 @@ static inline bool SENS_BOTTOM_get_level()
  */
 static inline void SENS_TOP_set_pull_mode(const enum port_pull_mode pull_mode)
 {
-	PORTB_set_pin_pull_mode(1, pull_mode);
+	PORTB_set_pin_pull_mode(5, pull_mode);
 }
 
 /**
@@ -98,7 +98,7 @@ static inline void SENS_TOP_set_pull_mode(const enum port_pull_mode pull_mode)
  */
 static inline void SENS_TOP_set_dir(const enum port_dir dir)
 {
-	PORTB_set_pin_dir(1, dir);
+	PORTB_set_pin_dir(5, dir);
 }
 
 /**
@@ -111,7 +111,7 @@ static inline void SENS_TOP_set_dir(const enum port_dir dir)
  */
 static inline void SENS_TOP_set_level(const bool level)
 {
-	PORTB_set_pin_level(1, level);
+	PORTB_set_pin_level(5, level);
 }
 
 /**
@@ -121,7 +121,7 @@ static inline void SENS_TOP_set_level(const bool level)
  */
 static inline void SENS_TOP_toggle_level()
 {
-	PORTB_toggle_pin_level(1);
+	PORTB_toggle_pin_level(5);
 }
 
 /**
@@ -131,7 +131,7 @@ static inline void SENS_TOP_toggle_level()
  */
 static inline bool SENS_TOP_get_level()
 {
-	return PORTB_get_pin_level(1);
+	return PORTB_get_pin_level(5);
 }
 
 /**
@@ -144,7 +144,7 @@ static inline bool SENS_TOP_get_level()
  */
 static inline void BUTTON_OK_set_pull_mode(const enum port_pull_mode pull_mode)
 {
-	PORTB_set_pin_pull_mode(2, pull_mode);
+	PORTB_set_pin_pull_mode(1, pull_mode);
 }
 
 /**
@@ -160,7 +160,7 @@ static inline void BUTTON_OK_set_pull_mode(const enum port_pull_mode pull_mode)
  */
 static inline void BUTTON_OK_set_dir(const enum port_dir dir)
 {
-	PORTB_set_pin_dir(2, dir);
+	PORTB_set_pin_dir(1, dir);
 }
 
 /**
@@ -173,7 +173,7 @@ static inline void BUTTON_OK_set_dir(const enum port_dir dir)
  */
 static inline void BUTTON_OK_set_level(const bool level)
 {
-	PORTB_set_pin_level(2, level);
+	PORTB_set_pin_level(1, level);
 }
 
 /**
@@ -183,7 +183,7 @@ static inline void BUTTON_OK_set_level(const bool level)
  */
 static inline void BUTTON_OK_toggle_level()
 {
-	PORTB_toggle_pin_level(2);
+	PORTB_toggle_pin_level(1);
 }
 
 /**
@@ -193,7 +193,7 @@ static inline void BUTTON_OK_toggle_level()
  */
 static inline bool BUTTON_OK_get_level()
 {
-	return PORTB_get_pin_level(2);
+	return PORTB_get_pin_level(1);
 }
 
 /**
@@ -206,7 +206,7 @@ static inline bool BUTTON_OK_get_level()
  */
 static inline void BUTTON_MINUS_set_pull_mode(const enum port_pull_mode pull_mode)
 {
-	PORTB_set_pin_pull_mode(3, pull_mode);
+	PORTB_set_pin_pull_mode(2, pull_mode);
 }
 
 /**
@@ -222,7 +222,7 @@ static inline void BUTTON_MINUS_set_pull_mode(const enum port_pull_mode pull_mod
  */
 static inline void BUTTON_MINUS_set_dir(const enum port_dir dir)
 {
-	PORTB_set_pin_dir(3, dir);
+	PORTB_set_pin_dir(2, dir);
 }
 
 /**
@@ -235,7 +235,7 @@ static inline void BUTTON_MINUS_set_dir(const enum port_dir dir)
  */
 static inline void BUTTON_MINUS_set_level(const bool level)
 {
-	PORTB_set_pin_level(3, level);
+	PORTB_set_pin_level(2, level);
 }
 
 /**
@@ -245,7 +245,7 @@ static inline void BUTTON_MINUS_set_level(const bool level)
  */
 static inline void BUTTON_MINUS_toggle_level()
 {
-	PORTB_toggle_pin_level(3);
+	PORTB_toggle_pin_level(2);
 }
 
 /**
@@ -255,7 +255,7 @@ static inline void BUTTON_MINUS_toggle_level()
  */
 static inline bool BUTTON_MINUS_get_level()
 {
-	return PORTB_get_pin_level(3);
+	return PORTB_get_pin_level(2);
 }
 
 /**
@@ -268,7 +268,7 @@ static inline bool BUTTON_MINUS_get_level()
  */
 static inline void BUTTON_PLUS_set_pull_mode(const enum port_pull_mode pull_mode)
 {
-	PORTB_set_pin_pull_mode(4, pull_mode);
+	PORTB_set_pin_pull_mode(3, pull_mode);
 }
 
 /**
@@ -284,7 +284,7 @@ static inline void BUTTON_PLUS_set_pull_mode(const enum port_pull_mode pull_mode
  */
 static inline void BUTTON_PLUS_set_dir(const enum port_dir dir)
 {
-	PORTB_set_pin_dir(4, dir);
+	PORTB_set_pin_dir(3, dir);
 }
 
 /**
@@ -297,7 +297,7 @@ static inline void BUTTON_PLUS_set_dir(const enum port_dir dir)
  */
 static inline void BUTTON_PLUS_set_level(const bool level)
 {
-	PORTB_set_pin_level(4, level);
+	PORTB_set_pin_level(3, level);
 }
 
 /**
@@ -307,7 +307,7 @@ static inline void BUTTON_PLUS_set_level(const bool level)
  */
 static inline void BUTTON_PLUS_toggle_level()
 {
-	PORTB_toggle_pin_level(4);
+	PORTB_toggle_pin_level(3);
 }
 
 /**
@@ -317,7 +317,7 @@ static inline void BUTTON_PLUS_toggle_level()
  */
 static inline bool BUTTON_PLUS_get_level()
 {
-	return PORTB_get_pin_level(4);
+	return PORTB_get_pin_level(3);
 }
 
 /**
@@ -330,7 +330,7 @@ static inline bool BUTTON_PLUS_get_level()
  */
 static inline void BUTTON_MODE_set_pull_mode(const enum port_pull_mode pull_mode)
 {
-	PORTB_set_pin_pull_mode(5, pull_mode);
+	PORTB_set_pin_pull_mode(4, pull_mode);
 }
 
 /**
@@ -346,7 +346,7 @@ static inline void BUTTON_MODE_set_pull_mode(const enum port_pull_mode pull_mode
  */
 static inline void BUTTON_MODE_set_dir(const enum port_dir dir)
 {
-	PORTB_set_pin_dir(5, dir);
+	PORTB_set_pin_dir(4, dir);
 }
 
 /**
@@ -359,7 +359,7 @@ static inline void BUTTON_MODE_set_dir(const enum port_dir dir)
  */
 static inline void BUTTON_MODE_set_level(const bool level)
 {
-	PORTB_set_pin_level(5, level);
+	PORTB_set_pin_level(4, level);
 }
 
 /**
@@ -369,7 +369,7 @@ static inline void BUTTON_MODE_set_level(const bool level)
  */
 static inline void BUTTON_MODE_toggle_level()
 {
-	PORTB_toggle_pin_level(5);
+	PORTB_toggle_pin_level(4);
 }
 
 /**
@@ -379,7 +379,7 @@ static inline void BUTTON_MODE_toggle_level()
  */
 static inline bool BUTTON_MODE_get_level()
 {
-	return PORTB_get_pin_level(5);
+	return PORTB_get_pin_level(4);
 }
 
 /**

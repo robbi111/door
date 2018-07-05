@@ -531,11 +531,11 @@ Wire Wire Line
 Wire Wire Line
 	7000 3950 6650 3950
 Text Label 6700 2900 0    60   ~ 0
-MISO
-Text Label 6700 2800 0    60   ~ 0
-MOSI
-Text Label 6700 3000 0    60   ~ 0
 SCK
+Text Label 6700 2800 0    60   ~ 0
+MISO
+Text Label 6700 3000 0    60   ~ 0
+TOP
 Text Label 6700 3950 0    60   ~ 0
 ~RESET
 Wire Wire Line
@@ -637,7 +637,7 @@ Wire Wire Line
 Text Label 6700 2500 0    60   ~ 0
 BOTTOM
 Text Label 6700 2600 0    60   ~ 0
-TOP
+OK
 Wire Wire Line
 	5200 1100 5500 1100
 Wire Wire Line
@@ -667,11 +667,11 @@ FORWARD
 Text Label 6700 3850 0    60   ~ 0
 REVERSE
 $Comp
-L C C100u1
+L C C1
 U 1 1 5B27CAFE
 P 4250 1850
-F 0 "C100u1" H 4275 1950 50  0000 L CNN
-F 1 "C" H 4275 1750 50  0000 L CNN
+F 0 "C1" H 4275 1950 50  0000 L CNN
+F 1 "100u" H 4275 1750 50  0000 L CNN
 F 2 "" H 4288 1700 50  0001 C CNN
 F 3 "" H 4250 1850 50  0001 C CNN
 	1    4250 1850
@@ -797,7 +797,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 2700 7000 2700
 Text Label 6700 2700 0    60   ~ 0
-OK
+MOSI
 Text Label 6700 3350 0    60   ~ 0
 LIGHT_SENS
 $Comp

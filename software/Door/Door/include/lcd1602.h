@@ -8,10 +8,15 @@
 void lcd_init( void );
 void lcd_clear( void );
 void lcd_enable( void );
-void lcd_write_cmd(uint8_t data);
-void lcd_write_data(uint8_t data);
+void lcd_write(uint8_t data, bool sel_data_cmd);
 void lcd_set_data(uint8_t data);
 void lcd_string( const char *data );
+
+//
+// 4-bit mask for LCD data pins [4:7] and position of LSB
+
+#define LCD_DATA_MASK					0xf0
+#define LCD_DATA_LSB					4
 
 ////////////////////////////////////////////////////////////////////////////////
 // LCD Ausführungszeiten (MS=Millisekunden, US=Mikrosekunden)

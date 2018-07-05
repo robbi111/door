@@ -14,8 +14,8 @@ void WDT_init()
 
 void WDT_off()
 {
-	__disable_interrupt();
-	__watchdog_reset();
+//	__disable_interrupt();
+//	__watchdog_reset();
 	/* Clear WDRF in MCUSR */
 	MCUSR &= ~(1<<WDRF);
 	/* Write logical one to WDCE and WDE */
@@ -23,5 +23,5 @@ void WDT_off()
 	WDTCSR |= (1<<WDCE) | (1<<WDE);
 	/* Turn off WDT */
 	WDTCSR = 0x00;
-	__enable_interrupt();
+//	__enable_interrupt();
 }

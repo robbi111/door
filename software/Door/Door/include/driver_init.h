@@ -52,6 +52,8 @@
 
 #include <wdt.h>
 
+#include <lcd1602.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
