@@ -44,14 +44,6 @@
 #include <sysctrl.h>
 #include <exint.h>
 
-// #include <adc_basic.h>
-// 
-// #include <ac.h>
-// 
-// #include <tc8.h>
-
-#include <wdt.h>
-
 #ifdef __cplusplus
 extern "C" {
 #endif

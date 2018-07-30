@@ -133,7 +133,7 @@ void system_init()
 	/* PORT setting on PC0 */
 
 	// Disable pull-up.
-	LIGHT_SENS_set_pull_mode(PORT_PULL_OFF);
+	//LIGHT_SENS_set_pull_mode(PORT_PULL_OFF);
 
 	/* PORT setting on PC4 */
 
@@ -162,98 +162,98 @@ void system_init()
 	/* PORT setting on PD0 */
 
 	// Set pin direction to output
-	LCD_RS_set_dir(PORT_DIR_OUT);
-
-	LCD_RS_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD1 */
-
-	// Set pin direction to output
-	LCD_RW_set_dir(PORT_DIR_OUT);
-
-	LCD_RW_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD2 */
-
-	// Set pin direction to output
-	LCD_ENABLE_set_dir(PORT_DIR_OUT);
-
-	LCD_ENABLE_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD3 */
-
-	// Set pin direction to output
-	LED_0_set_dir(PORT_DIR_OUT);
-
-	LED_0_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD4 */
-
-	// Set pin direction to output
-	LCD_DATA0_set_dir(PORT_DIR_OUT);
-
-	LCD_DATA0_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD5 */
-
-	// Set pin direction to output
-	LCD_DATA1_set_dir(PORT_DIR_OUT);
-
-	LCD_DATA1_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD6 */
-
-	// Set pin direction to output
-	LCD_DATA2_set_dir(PORT_DIR_OUT);
-
-	LCD_DATA2_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	/* PORT setting on PD7 */
-
-	// Set pin direction to output
-	LCD_DATA3_set_dir(PORT_DIR_OUT);
-
-	LCD_DATA3_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
+// 	LCD_RS_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_RS_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD1 */
+// 
+// 	// Set pin direction to output
+// 	LCD_RW_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_RW_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD2 */
+// 
+// 	// Set pin direction to output
+// 	LCD_ENABLE_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_ENABLE_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD3 */
+// 
+// 	// Set pin direction to output
+// 	LED_0_set_dir(PORT_DIR_OUT);
+// 
+// 	LED_0_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD4 */
+// 
+// 	// Set pin direction to output
+// 	LCD_DATA0_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_DATA0_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD5 */
+// 
+// 	// Set pin direction to output
+// 	LCD_DATA1_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_DATA1_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD6 */
+// 
+// 	// Set pin direction to output
+// 	LCD_DATA2_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_DATA2_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
+// 
+// 	/* PORT setting on PD7 */
+// 
+// 	// Set pin direction to output
+// 	LCD_DATA3_set_dir(PORT_DIR_OUT);
+// 
+// 	LCD_DATA3_set_level(
+// 	    // <y> Initial level
+// 	    // <id> pad_initial_level
+// 	    // <false"> Low
+// 	    // <true"> High
+// 	    false);
 
 	sysctrl_init();
 	
@@ -265,8 +265,8 @@ void system_init()
 
 	//AC_0_initialization();
 
-	TIMER_2_initialization();
-	
-	lcd_init();
+// 	TIMER_2_initialization();
+// 	
+// 	lcd_init();
 
 }

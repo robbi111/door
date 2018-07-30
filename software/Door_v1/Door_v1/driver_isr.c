@@ -1,7 +1,7 @@
 /**
  * \file
  *
- * \brief Driver initialization.
+ * \brief Driver ISR.
  *
  (c) 2018 Microchip Technology Inc. and its subsidiaries.
 
@@ -33,33 +33,5 @@
  * to avoid losing it when reconfiguring.
  */
 
-#ifndef DRIVER_INIT_H_INCLUDED
-#define DRIVER_INIT_H_INCLUDED
-
+#include <driver_init.h>
 #include <compiler.h>
-#include <clock_config.h>
-#include <port.h>
-#include <atmel_start_pins.h>
-
-#include <sysctrl.h>
-#include <exint.h>
-
-// #include <adc_basic.h>
-// 
-// #include <ac.h>
-// 
-// #include <tc8.h>
-
-#include <wdt.h>
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-void system_init(void);
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* DRIVER_INIT_H_INCLUDED */
